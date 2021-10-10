@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>MyResume</title>
+</head>
+<body>
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Wislowski</a>
+
+            <div class="nav__icons">
+                <a href="https://www.linkedin.com/" target="_blank" class="social__link">
+                    <i class='bx bxl-linkedin social__icon'></i> 
+                </a>
+                <a href="https://github.com/MaciejWislowski" target="_blank" class="social__link">
+                    <i class='bx bxl-github social__icon'></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" class="social__link">
+                    <i class='bx bxl-facebook social__icon'></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="social__link">
+                    <i class='bx bxl-instagram social__icon'></i> 
+                </a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-circle nav__icon'></i>Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class='bx bxs-user nav__icon'></i>Profile
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class='bx bx-book nav__icon'></i>Education
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-receipt nav__icon'></i>Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class='bx bx-briefcase nav__icon'></i>Experience
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <i class='bx bx-award nav__icon'></i>Certificates
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toogle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main bd-container">
+        <div class="resume">
+            <div class="resume__left">
+                <!-- ===== HOME ===== -->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/img/wislowski.jpg" alt="" class="home__img" >
+
+                            <h1 class="home__title txt-en visible">Maciej Wislowski</h1>
+                            <h1 class="home__title txt-pl ">Wisłowski Maciej</h1>
+                            <h1 class="home__title txt-ru">Мацей Висловски</h1>
+                            <h3 class="home__profession txt-en visible">Web/Software developer || Chemical and Process Engineer || Support Assistant</h3>
+                            <h3 class="home__profession txt-pl ">Projektant Stron Internetowych/Oprogramowania || Inżynier Chemiczny i Procesowy || Wsparcie Klienta</h3>
+                            <h3 class="home__profession txt-ru ">Дизайнер веб-сайто || Инженер-химик и технолог || Помощник по поддержке</h3>
+
+                            <!-- ===== button to download CV ===== -->
+                            <div>
+                                <a download="" href="assets/pdf/Maciej Wislowski's CV.pdf" class="home_button-movil">Download</a>
+                            </div>
+                        </div>
+
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class='bx bx-map home__icon'></i> 3/4 Bellenden Gardens, EH16 5TA, Edinburgh, Scotland
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-envelope home__icon'></i> maciej.wislowski@gmail.com
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-phone home__icon'></i> 07784703040
+                            </span>
+                        </div>
+                    </div>
+                    <!-- ===== THEME CHANGE ====== -->
+                    <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+                    <!-- ===== Language change ===== -->
+                    <div class="lang-change__menu">
+                        <div class="lang-change__icon" id="lc-icon">
+                            <img class="icon_big lang-change-button light-theme-only" src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjQ4MHB0IiB2aWV3Qm94PSIwIDAgNDgwIDQ4MCIgd2lkdGg9IjQ4MHB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0yNDAgMGMtMTMyLjU0Njg3NSAwLTI0MCAxMDcuNDUzMTI1LTI0MCAyNDBzMTA3LjQ1MzEyNSAyNDAgMjQwIDI0MCAyNDAtMTA3LjQ1MzEyNSAyNDAtMjQwYy0uMTQ4NDM4LTEzMi40ODQzNzUtMTA3LjUxNTYyNS0yMzkuODUxNTYyLTI0MC0yNDB6bTIwNy41NjY0MDYgMzI0LjA3ODEyNS02OC4yNTM5MDYgMTEuNzc3MzQ0YzcuODEyNS0yOC42NTIzNDQgMTIuMDMxMjUtNTguMTY0MDYzIDEyLjU1ODU5NC04Ny44NTU0NjloNzEuOTI5Njg3Yy0uOTAyMzQzIDI2LjExNzE4OC02LjM5ODQzNyA1MS44NzEwOTQtMTYuMjM0Mzc1IDc2LjA3ODEyNXptLTQzMS4zNjcxODctNzYuMDc4MTI1aDcxLjkyOTY4N2MuNTI3MzQ0IDI5LjY5MTQwNiA0Ljc0NjA5NCA1OS4yMDMxMjUgMTIuNTU4NTk0IDg3Ljg1NTQ2OWwtNjguMjUzOTA2LTExLjc3NzM0NGMtOS44MzU5MzgtMjQuMjA3MDMxLTE1LjMzMjAzMi00OS45NjA5MzctMTYuMjM0Mzc1LTc2LjA3ODEyNXptMTYuMjM0Mzc1LTkyLjA3ODEyNSA2OC4yNTM5MDYtMTEuNzc3MzQ0Yy03LjgxMjUgMjguNjUyMzQ0LTEyLjAzMTI1IDU4LjE2NDA2My0xMi41NTg1OTQgODcuODU1NDY5aC03MS45Mjk2ODdjLjkwMjM0My0yNi4xMTcxODggNi4zOTg0MzctNTEuODcxMDk0IDE2LjIzNDM3NS03Ni4wNzgxMjV6bTIxNS41NjY0MDYtMjcuNDcyNjU2YzI4Ljc0NjA5NC4zNjcxODcgNTcuNDIxODc1IDIuOTg0Mzc1IDg1Ljc2MTcxOSA3LjgzMjAzMWwyOC4yMzgyODEgNC44NzEwOTRjOC42NzU3ODEgMjkuNTIzNDM3IDEzLjM0Mzc1IDYwLjA3ODEyNSAxMy44Nzg5MDYgOTAuODQ3NjU2aC0xMjcuODc4OTA2em04OC40ODgyODEtNy45Mzc1Yy0yOS4yMzgyODEtNC45OTYwOTQtNTguODI4MTI1LTcuNjk1MzEzLTg4LjQ4ODI4MS04LjA2MjV2LTk2YzQ1Ljg2MzI4MSA0LjQwNjI1IDg1LjcwMzEyNSA0Ni4zOTg0MzcgMTA4LjI4MTI1IDEwNy41MTE3MTl6bS0xMDQuNDg4MjgxLTguMDYyNWMtMjkuNjYwMTU2LjM2NzE4Ny01OS4yNDIxODggMy4wNjY0MDYtODguNDgwNDY5IDguMDYyNWwtMTkuODAwNzgxIDMuNDI1NzgxYzIyLjU3ODEyNS02MS4xMjg5MDYgNjIuNDE3OTY5LTEwMy4xMzY3MTkgMTA4LjI4MTI1LTEwNy41MjM0Mzh6bS04NS43NTM5MDYgMjMuODMyMDMxYzI4LjMzNTkzNy00Ljg0NzY1NiA1Ny4wMDc4MTItNy40NjQ4NDQgODUuNzUzOTA2LTcuODMyMDMxdjEwMy41NTA3ODFoLTEyNy44Nzg5MDZjLjUzNTE1Ni0zMC43Njk1MzEgNS4yMDMxMjUtNjEuMzI0MjE5IDEzLjg3ODkwNi05MC44NDc2NTZ6bS00Mi4xMjUgMTExLjcxODc1aDEyNy44Nzg5MDZ2MTAzLjU1MDc4MWMtMjguNzQ2MDk0LS4zNjcxODctNTcuNDIxODc1LTIuOTg0Mzc1LTg1Ljc2MTcxOS03LjgzMjAzMWwtMjguMjM4MjgxLTQuODcxMDk0Yy04LjY3NTc4MS0yOS41MjM0MzctMTMuMzQzNzUtNjAuMDc4MTI1LTEzLjg3ODkwNi05MC44NDc2NTZ6bTM5LjM5MDYyNSAxMTEuNDg4MjgxYzI5LjIzODI4MSA1LjAwMzkwNyA1OC44MjQyMTkgNy43MTQ4NDQgODguNDg4MjgxIDguMTA1NDY5djk2Yy00NS44NjMyODEtNC40MTAxNTYtODUuNzAzMTI1LTQ2LjQwMjM0NC0xMDguMjgxMjUtMTA3LjUxNTYyNXptMTA0LjQ4ODI4MSA4LjEwNTQ2OWMyOS42NjAxNTYtLjM5MDYyNSA1OS4yNDIxODgtMy4xMDE1NjIgODguNDgwNDY5LTguMTA1NDY5bDE5LjgwMDc4MS0zLjQyNTc4MWMtMjIuNTc4MTI1IDYxLjEyODkwNi02Mi40MTc5NjkgMTAzLjEzNjcxOS0xMDguMjgxMjUgMTA3LjUyMzQzOHptODUuNzUzOTA2LTIzLjg3NWMtMjguMzM1OTM3IDQuODQ3NjU2LTU3LjAwNzgxMiA3LjQ2NDg0NC04NS43NTM5MDYgNy44MzIwMzF2LTEwMy41NTA3ODFoMTI3Ljg3ODkwNmMtLjUzNTE1NiAzMC43Njk1MzEtNS4yMDMxMjUgNjEuMzI0MjE5LTEzLjg3ODkwNiA5MC44NDc2NTZ6bTU4LjExNzE4OC0xMTEuNzE4NzVjLS41MjczNDQtMjkuNjkxNDA2LTQuNzQ2MDk0LTU5LjIwMzEyNS0xMi41NTg1OTQtODcuODU1NDY5bDY4LjI1MzkwNiAxMS43NzczNDRjOS44MzU5MzggMjQuMjA3MDMxIDE1LjMzMjAzMiA0OS45NjA5MzcgMTYuMjM0Mzc1IDc2LjA3ODEyNXptNDcuNjAxNTYyLTkzLjcxMDkzOC02NS40MjU3ODEtMTEuMjg5MDYyYy0xMS43NjE3MTktMzguMzcxMDk0LTMzLjc2NTYyNS03Mi44MDg1OTQtNjMuNjQ4NDM3LTk5LjYwMTU2MiA1NS44Nzg5MDYgMTguNjQ4NDM3IDEwMi4yMTg3NSA1OC40NTcwMzEgMTI5LjA3NDIxOCAxMTAuODkwNjI0em0tMjY5Ljg3MTA5NC0xMTAuODkwNjI0Yy0yOS44ODI4MTIgMjYuNzkyOTY4LTUxLjg4NjcxOCA2MS4yMzA0NjgtNjMuNjQ4NDM3IDk5LjYwMTU2MmwtNjUuNDI1NzgxIDExLjI4OTA2MmMyNi44NTU0NjgtNTIuNDMzNTkzIDczLjE5NTMxMi05Mi4yNDIxODcgMTI5LjA3NDIxOC0xMTAuODkwNjI0em0tMTI5LjA3NDIxOCAzMTQuMzEyNSA2NS40MjU3ODEgMTEuMjg5MDYyYzExLjc2MTcxOSAzOC4zNzEwOTQgMzMuNzY1NjI1IDcyLjgwODU5NCA2My42NDg0MzcgOTkuNjAxNTYyLTU1Ljg3ODkwNi0xOC42NDg0MzctMTAyLjIxODc1LTU4LjQ1NzAzMS0xMjkuMDc0MjE4LTExMC44OTA2MjR6bTI2OS44NzEwOTQgMTEwLjg5MDYyNGMyOS44ODI4MTItMjYuNzkyOTY4IDUxLjg4NjcxOC02MS4yMzA0NjggNjMuNjQ4NDM3LTk5LjYwMTU2Mmw2NS40MjU3ODEtMTEuMjg5MDYyYy0yNi44NTU0NjggNTIuNDMzNTkzLTczLjE5NTMxMiA5Mi4yNDIxODctMTI5LjA3NDIxOCAxMTAuODkwNjI0em0wIDAiLz48L3N2Zz4=" />
+                            <img class="icon_big lang-change-button dark-theme-only" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ4MCA0ODAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTI0MCAwYy0xMzIuNTQ2ODc1IDAtMjQwIDEwNy40NTMxMjUtMjQwIDI0MHMxMDcuNDUzMTI1IDI0MCAyNDAgMjQwIDI0MC0xMDcuNDUzMTI1IDI0MC0yNDBjLS4xNDg0MzgtMTMyLjQ4NDM3NS0xMDcuNTE1NjI1LTIzOS44NTE1NjItMjQwLTI0MHptMjA3LjU2NjQwNiAzMjQuMDc4MTI1LTY4LjI1MzkwNiAxMS43NzczNDRjNy44MTI1LTI4LjY1MjM0NCAxMi4wMzEyNS01OC4xNjQwNjMgMTIuNTU4NTk0LTg3Ljg1NTQ2OWg3MS45Mjk2ODdjLS45MDIzNDMgMjYuMTE3MTg4LTYuMzk4NDM3IDUxLjg3MTA5NC0xNi4yMzQzNzUgNzYuMDc4MTI1em0tNDMxLjM2NzE4Ny03Ni4wNzgxMjVoNzEuOTI5Njg3Yy41MjczNDQgMjkuNjkxNDA2IDQuNzQ2MDk0IDU5LjIwMzEyNSAxMi41NTg1OTQgODcuODU1NDY5bC02OC4yNTM5MDYtMTEuNzc3MzQ0Yy05LjgzNTkzOC0yNC4yMDcwMzEtMTUuMzMyMDMyLTQ5Ljk2MDkzNy0xNi4yMzQzNzUtNzYuMDc4MTI1em0xNi4yMzQzNzUtOTIuMDc4MTI1IDY4LjI1MzkwNi0xMS43NzczNDRjLTcuODEyNSAyOC42NTIzNDQtMTIuMDMxMjUgNTguMTY0MDYzLTEyLjU1ODU5NCA4Ny44NTU0NjloLTcxLjkyOTY4N2MuOTAyMzQzLTI2LjExNzE4OCA2LjM5ODQzNy01MS44NzEwOTQgMTYuMjM0Mzc1LTc2LjA3ODEyNXptMjE1LjU2NjQwNi0yNy40NzI2NTZjMjguNzQ2MDk0LjM2NzE4NyA1Ny40MjE4NzUgMi45ODQzNzUgODUuNzYxNzE5IDcuODMyMDMxbDI4LjIzODI4MSA0Ljg3MTA5NGM4LjY3NTc4MSAyOS41MjM0MzcgMTMuMzQzNzUgNjAuMDc4MTI1IDEzLjg3ODkwNiA5MC44NDc2NTZoLTEyNy44Nzg5MDZ6bTg4LjQ4ODI4MS03LjkzNzVjLTI5LjIzODI4MS00Ljk5NjA5NC01OC44MjgxMjUtNy42OTUzMTMtODguNDg4MjgxLTguMDYyNXYtOTZjNDUuODYzMjgxIDQuNDA2MjUgODUuNzAzMTI1IDQ2LjM5ODQzNyAxMDguMjgxMjUgMTA3LjUxMTcxOXptLTEwNC40ODgyODEtOC4wNjI1Yy0yOS42NjAxNTYuMzY3MTg3LTU5LjI0MjE4OCAzLjA2NjQwNi04OC40ODA0NjkgOC4wNjI1bC0xOS44MDA3ODEgMy40MjU3ODFjMjIuNTc4MTI1LTYxLjEyODkwNiA2Mi40MTc5NjktMTAzLjEzNjcxOSAxMDguMjgxMjUtMTA3LjUyMzQzOHptLTg1Ljc1MzkwNiAyMy44MzIwMzFjMjguMzM1OTM3LTQuODQ3NjU2IDU3LjAwNzgxMi03LjQ2NDg0NCA4NS43NTM5MDYtNy44MzIwMzF2MTAzLjU1MDc4MWgtMTI3Ljg3ODkwNmMuNTM1MTU2LTMwLjc2OTUzMSA1LjIwMzEyNS02MS4zMjQyMTkgMTMuODc4OTA2LTkwLjg0NzY1NnptLTQyLjEyNSAxMTEuNzE4NzVoMTI3Ljg3ODkwNnYxMDMuNTUwNzgxYy0yOC43NDYwOTQtLjM2NzE4Ny01Ny40MjE4NzUtMi45ODQzNzUtODUuNzYxNzE5LTcuODMyMDMxbC0yOC4yMzgyODEtNC44NzEwOTRjLTguNjc1NzgxLTI5LjUyMzQzNy0xMy4zNDM3NS02MC4wNzgxMjUtMTMuODc4OTA2LTkwLjg0NzY1NnptMzkuMzkwNjI1IDExMS40ODgyODFjMjkuMjM4MjgxIDUuMDAzOTA3IDU4LjgyNDIxOSA3LjcxNDg0NCA4OC40ODgyODEgOC4xMDU0Njl2OTZjLTQ1Ljg2MzI4MS00LjQxMDE1Ni04NS43MDMxMjUtNDYuNDAyMzQ0LTEwOC4yODEyNS0xMDcuNTE1NjI1em0xMDQuNDg4MjgxIDguMTA1NDY5YzI5LjY2MDE1Ni0uMzkwNjI1IDU5LjI0MjE4OC0zLjEwMTU2MiA4OC40ODA0NjktOC4xMDU0NjlsMTkuODAwNzgxLTMuNDI1NzgxYy0yMi41NzgxMjUgNjEuMTI4OTA2LTYyLjQxNzk2OSAxMDMuMTM2NzE5LTEwOC4yODEyNSAxMDcuNTIzNDM4em04NS43NTM5MDYtMjMuODc1Yy0yOC4zMzU5MzcgNC44NDc2NTYtNTcuMDA3ODEyIDcuNDY0ODQ0LTg1Ljc1MzkwNiA3LjgzMjAzMXYtMTAzLjU1MDc4MWgxMjcuODc4OTA2Yy0uNTM1MTU2IDMwLjc2OTUzMS01LjIwMzEyNSA2MS4zMjQyMTktMTMuODc4OTA2IDkwLjg0NzY1NnptNTguMTE3MTg4LTExMS43MTg3NWMtLjUyNzM0NC0yOS42OTE0MDYtNC43NDYwOTQtNTkuMjAzMTI1LTEyLjU1ODU5NC04Ny44NTU0NjlsNjguMjUzOTA2IDExLjc3NzM0NGM5LjgzNTkzOCAyNC4yMDcwMzEgMTUuMzMyMDMyIDQ5Ljk2MDkzNyAxNi4yMzQzNzUgNzYuMDc4MTI1em00Ny42MDE1NjItOTMuNzEwOTM4LTY1LjQyNTc4MS0xMS4yODkwNjJjLTExLjc2MTcxOS0zOC4zNzEwOTQtMzMuNzY1NjI1LTcyLjgwODU5NC02My42NDg0MzctOTkuNjAxNTYyIDU1Ljg3ODkwNiAxOC42NDg0MzcgMTAyLjIxODc1IDU4LjQ1NzAzMSAxMjkuMDc0MjE4IDExMC44OTA2MjR6bS0yNjkuODcxMDk0LTExMC44OTA2MjRjLTI5Ljg4MjgxMiAyNi43OTI5NjgtNTEuODg2NzE4IDYxLjIzMDQ2OC02My42NDg0MzcgOTkuNjAxNTYybC02NS40MjU3ODEgMTEuMjg5MDYyYzI2Ljg1NTQ2OC01Mi40MzM1OTMgNzMuMTk1MzEyLTkyLjI0MjE4NyAxMjkuMDc0MjE4LTExMC44OTA2MjR6bS0xMjkuMDc0MjE4IDMxNC4zMTI1IDY1LjQyNTc4MSAxMS4yODkwNjJjMTEuNzYxNzE5IDM4LjM3MTA5NCAzMy43NjU2MjUgNzIuODA4NTk0IDYzLjY0ODQzNyA5OS42MDE1NjItNTUuODc4OTA2LTE4LjY0ODQzNy0xMDIuMjE4NzUtNTguNDU3MDMxLTEyOS4wNzQyMTgtMTEwLjg5MDYyNHptMjY5Ljg3MTA5NCAxMTAuODkwNjI0YzI5Ljg4MjgxMi0yNi43OTI5NjggNTEuODg2NzE4LTYxLjIzMDQ2OCA2My42NDg0MzctOTkuNjAxNTYybDY1LjQyNTc4MS0xMS4yODkwNjJjLTI2Ljg1NTQ2OCA1Mi40MzM1OTMtNzMuMTk1MzEyIDkyLjI0MjE4Ny0xMjkuMDc0MjE4IDExMC44OTA2MjR6bTAgMCIgZmlsbD0iI2YwZWZlZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjwvZz48L3N2Zz4="/>
+                        </div>
+                        <div class="lang-change__container" id="lc-menu">
+                            <div class="lang-change__button" id="polish">PL</div>
+                            <div class="lang-change__button" id="english">EN</div>
+                            <div class="lang-change__button" id="russian">RU</div>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- ===== SOCIAL ===== -->
+                <section class="social section">
+                    <div class="social__container bd-grid">
+                        <a href="https://www.linkedin.com/" target="_blank" class="social__link">
+                            <i class='bx bxl-linkedin social__icon'></i> 
+                        </a>
+                        <a href="https://github.com/MaciejWislowski" target="_blank" class="social__link">
+                            <i class='bx bxl-github social__icon'></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" class="social__link">
+                            <i class='bx bxl-facebook social__icon'></i> 
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social__link">
+                            <i class='bx bxl-instagram social__icon'></i> 
+                        </a>
+                    </div>
+                </section>
+                <!-- ===== Profile ===== -->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title txt-en visible">Profile</h2>
+                    <h2 class="section-title txt-pl">Profil</h2>
+                    <h2 class="section-title txt-ru">Профиль</h2>
+
+                    <p class="profile__description txt-en visible">I am a graduate of Chemical and Process Engineering at Warsaw University of Technology. Currently, I am working as a Technical Support Assistant in Sykes. At the same time, I am studying an online Software Developer Course. <br> <br> I am a ambitious and full of enthusiasm individual, who desire new challenges. My biggest motivation to work is the possibility to develop myself, learn new skills and achieve goals.</p>
+                    <p class="profile__description txt-pl"><br>Jestem absolwentem Inżynierii Chemicznej i Procesowej na Politechnice Warszawskiej. Obecnie pracuję jako Asystent Wsparcia Technicznego w firmie Sykes. Jednocześnie uczę się w ramach internetowego kursu programowania. <br> <br> Jestem osobą ambitną i pełną zapału, która pragnie nowych wyzwań. Moją największą motywacją do pracy jest możliwość rozwoju, zdobywania nowych umiejętności i osiągania celów.</p>
+                    <p class="profile__description txt-ru"><br>Я выпускник факультета химической и технологической инженерии Варшавского технологического университета. В настоящее время я работаю помощником технической поддержки в Sykes. В то же время я учусь курса программирования. <br> <br> Я амбициозный и увлеченный человек, который хочет новых вызовов. Моя самая большая мотивация в работе - это возможность развиваться, приобретать новые навыки и достигать целей.</p>
+
+
+                </section>
+                <!-- ===== Education ===== -->
+                <section class="education section" id="education">
+                    <h2 class="section-title txt-en visible">Education</h2>
+                    <h2 class="section-title txt-pl">Edukacja</h2>
+                    <h2 class="section-title txt-ru">Образование</h2>
+
+                    <div class="education__container bd-grid">
+                        <!-- ====== Master Degree ======= -->
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"/></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class=" education__title txt-en visible">Master of Science: Chemical and Process Engineering</h3>
+                                <h3 class=" education__title txt-pl">Studia Magisterskie: Inżynieria Chemiczna i Procesowa</h3>
+                                <h3 class=" education__title txt-ru">Магистратура: Химическая и технологическая инженерия</h3>
+
+                                <span class="education__studies txt-en visible">Warsaw University of Technology</span>
+                                <span class="education__studies txt-pl">Politechnika Warszawska</span>
+                                <span class="education__studies txt-ru">Варшавский технологический университет</span>
+
+                                <span class="education__year">2014 - 2016</span>
+                            </div>
+                         </div>
+                        <!-- ======== Bachelor Degree ====== -->
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <!-- <span class="education__line"></span> -->
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 education__title>BACHELOR OF SCIENCE: CHEMICAL AND PROCESS ENGINEERING</h3>
+                                <span class="education__studies">Warsaw University of Technology</span>
+                                <span class="education__year">2010 - 2014</span>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+            </div>
+
+            <div class="resume__right">
+                <!-- ==== EXPERIENCE ========-->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Experience</h2>
+
+                    <div class="experience__container bd-grid">
+                        <!-- ===== Sykes ===== -->
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Technical Support Specialist</h3>
+                                <span class="experience__company">August 2019 until now | Sykes</span>
+                                <p class="experience__description">I am working as a Technical Support Specialist for the global leader in the console and gaming industry. I am providing excellent quality service to customers and creating incident reports.</p>
+                            </div>
+                        </div>
+                        <!-- ===== Tartan Weaving Mill ===== -->
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Customer Service Advisor</h3>
+                                <span class="experience__company">May 2018 to August 2019 | TWM</span>
+                                <p class="experience__description">I was working in a busy team and under pressure. I am providing excellent quality service to customers. I am responsible for customer service, dealing with different language speaking customers, checking deliveries, answering the company phone.</p>
+                            </div>
+                        </div>    
+                        <!-- ===== MR Smart Scot ===== -->
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Assistant Manager</h3>
+                                <span class="experience__company">July 2016 to September 2017 | Mr Smart Scot</span>
+                                <p class="experience__description">I was responsible for managing a team, problem-solving, and supply chain in busy holiday accommodation and letting company. Also, I was providing customer service, and I was responsible for contact with business partners companies like Booking.com or Airbnb.</p>
+                            </div>
+                        </div>    
+                        <!-- ===== ChemTech Separation& Engineering ===== -->
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <!-- <span class="experience__line"></span> -->
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Master thesis research / Design Engineer Intern</h3>
+                                <span class="experience__company">July 2015 to May 2016 | ChemTech Separation& Engineering</span>
+                                <p class="experience__description">I was doing research for my master's thesis and in meantime, I was helping in a busy design office. During that time, I did the project in which I was responsible for designing and supervision of manufacturing of the experimental separator. As a part of the project, I was responsible for preparing and reviewing engineering documents, collaboration with different departments and external equipment suppliers.</p>
+                            </div>
+                        </div>      
+                    </div>
+                </section>
+                <!-- ====== Skills ======= -->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Html
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> CSS
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> JavaScript
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Sass
+                            </li>
+                        </ul>
+
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Angular
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Firebase
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> React
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- ===== CERTIFICATES ===== -->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">Certificates</h2>
+
+                    <div class="certificates__container bd-grid">
+                        <!-- ===== CIW HTML & CSS ===== -->
+                        <div class="certificate__contant">
+                            <h3 class="certificate__title">CIW Advanced HTML5 and CSS3 Specialist</h3>
+                            <p class="certificate__description">01/12/2019</p>
+                        </div>
+                        <!-- ===== uCertify HTML & CSS ========= -->
+                        <div class="certificate__contant">
+                            <h3 class="certificate__title">Certificate of completing the uCertify course for Advanced HTML5 and CSS3 Specialist</h3>
+                            <p class="certificate__description">01/12/2019</p>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- ===== Languages ===== -->
+                <section class="languages section">
+                    <h2 class="section-title">Languages</h2>
+
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Polish
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>English
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Russian
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- ===== Interestes ===== -->
+                <section class="interestes section">
+                    <h2 class="section-title">Hobby</h2>
+
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class='bx bx-music interests__icon'></i>
+                            <span class="interests__name">Music</span>
+                        </div>
+                        <div class="interests__content">
+                            <img class="icon interests__icon light-theme-only" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjEuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzguNDI3IDM4LjQyNyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzguNDI3IDM4LjQyNzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIHN0eWxlPSJmaWxsOiMwMzAxMDQ7IiBkPSJNMzYuNTAxLDMyLjIwNGMtMS41NjQtMS4zMjQtMy42NzMtMS44OTYtNS40My0yLjg4N2MtMi45ODItMS42OTEtNi4zNzUtMy4zNjgtOS4wNjEtNS40OTINCgkJCWMtNi42NjQtNS4yNy02LjMxMy0xMS41MzQtNS4zNzktMTkuMjM0YzAuMTg3LTEuNTQyLTAuMjc4LTIuOTI2LTEuNTgzLTMuODYxYy0xLjc4Ni0xLjI4LTQuMDUtMC45My00LjUxMiwxLjQ4Mw0KCQkJYy0wLjYxOSwzLjI0LDEuMzEsNy40MDksMS41MzYsMTAuNzA4YzAuMjYxLDMuODE5LTAuMTMzLDcuNjk3LTEuNDg1LDExLjI4OWMtMC45NTksMi41NDctMi41NzUsNS4xMTQtNC4zMjEsNy4yMDMNCgkJCWMtMS4wNSwxLjI1OC02Ljg4LDQuNjEzLTQuODM5LDYuNTc1YzIuMDksMi4wMDksNy42Ny0zLjQ0Miw5LjAwMy00Ljc5YzAuNTk5LTAuNjA1LDMuODQ1LTUuNjMxLDUuMzAyLTguNDIxDQoJCQljMC41MjktMS4wMTQsMC44MjMtMS43MzMsMC42NjYtMS44MzdjMC4xMDMsMC4wNjgsMC4xODMsMC4xMjYsMC4yNDIsMC4yYzIuODczLDMuNTk4LDUuMzU0LDcuODI1LDguODIyLDEwLjg4MQ0KCQkJYzIuMzMyLDIuMDU0LDUuMjc2LDEuNjc2LDguMTEyLDEuMjY1QzM1LjM4LDM1LjAyMywzOS4xODcsMzQuNDc3LDM2LjUwMSwzMi4yMDR6Ii8+DQoJCTxwYXRoIHN0eWxlPSJmaWxsOiMwMzAxMDQ7IiBkPSJNMTkuNzQ5LDE4LjM4N2MwLjU3LTAuMDUyLDEuMDk2LTAuMjg0LDEuNTg0LTAuNjE4YzIuNTk4LTEuNzc5LDUuMTk1LTMuNTczLDcuMzU0LTUuOTAyDQoJCQljMC41MDYtMC41NDgsMC45NzEtMS4xNjIsMS4zMzItMS44MTVjMC42NDgtMS4xNzUsMC40NDUtMi4wNzQtMC41NzQtMi45NTljLTAuODc1LTAuNzU5LTEuOTM3LTEuMDMzLTMuMDYyLTEuMTQyDQoJCQljLTEuODE4LTAuMTc4LTMuMTk1LDAuNzE2LTMuNzE1LDIuNDUyYy0wLjEyNiwwLjQyMi0wLjIxNSwwLjg1OS0wLjI4NiwxLjI5NGMtMC4yNTYsMS41NTktMC44MywyLjk4Ni0xLjcyMiw0LjI4OQ0KCQkJYy0wLjY3NSwwLjk4OC0xLjM1OCwxLjk3MS0yLjAxNywyLjk3Yy0wLjEwOCwwLjE2NC0wLjE5OCwwLjM0MS0wLjI4OSwwLjUyOUMxOC4yMDksMTcuNzg2LDE4LjgwMywxOC40NzMsMTkuNzQ5LDE4LjM4N3oiLz4NCgkJPHBhdGggc3R5bGU9ImZpbGw6IzAzMDEwNDsiIGQ9Ik0zLjAxMSwxNS43ODFjMS4yOTYsMC44MSwxLjk4MywxLjk1NCwyLjQ1MiwzLjM0MWMwLjE3NywwLjUyNCwwLjQ3OSwxLjExMywwLjkwNSwxLjQyMw0KCQkJYzAuNzk1LDAuNTc2LDEuNzE5LDAuNTkxLDIuNjQyLDAuMTI3YzAuNDgyLTAuMjQyLDAuODc5LTAuNTMxLDEuMTY0LTAuOTA4YzAuNDk2LTAuNjU2LDAuMzg3LTEuNzIzLDAuMjY1LTIuMTM4DQoJCQljLTAuMDc1LTAuMjUzLTAuMTU4LTAuNTAyLTAuMjc3LTAuNzMyYy0xLjM1OC0yLjYzNi00LjEyOS0zLjE1NC02LjUwNi00LjI0NmMtMC4xOTQtMC4wODktMC42MjUsMC4wODQtMC44MDcsMC4yNw0KCQkJQzIuMTQzLDEzLjY0MywyLjE2OCwxNS4yNTQsMy4wMTEsMTUuNzgxeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+                            <img class="icon interests__icon dark-theme-only" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM4LjQyNyAzOC40MjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggc3R5bGU9IiIgZD0iTTM2LjUwMSwzMi4yMDRjLTEuNTY0LTEuMzI0LTMuNjczLTEuODk2LTUuNDMtMi44ODdjLTIuOTgyLTEuNjkxLTYuMzc1LTMuMzY4LTkuMDYxLTUuNDkyICAgIGMtNi42NjQtNS4yNy02LjMxMy0xMS41MzQtNS4zNzktMTkuMjM0YzAuMTg3LTEuNTQyLTAuMjc4LTIuOTI2LTEuNTgzLTMuODYxYy0xLjc4Ni0xLjI4LTQuMDUtMC45My00LjUxMiwxLjQ4MyAgICBjLTAuNjE5LDMuMjQsMS4zMSw3LjQwOSwxLjUzNiwxMC43MDhjMC4yNjEsMy44MTktMC4xMzMsNy42OTctMS40ODUsMTEuMjg5Yy0wLjk1OSwyLjU0Ny0yLjU3NSw1LjExNC00LjMyMSw3LjIwMyAgICBjLTEuMDUsMS4yNTgtNi44OCw0LjYxMy00LjgzOSw2LjU3NWMyLjA5LDIuMDA5LDcuNjctMy40NDIsOS4wMDMtNC43OWMwLjU5OS0wLjYwNSwzLjg0NS01LjYzMSw1LjMwMi04LjQyMSAgICBjMC41MjktMS4wMTQsMC44MjMtMS43MzMsMC42NjYtMS44MzdjMC4xMDMsMC4wNjgsMC4xODMsMC4xMjYsMC4yNDIsMC4yYzIuODczLDMuNTk4LDUuMzU0LDcuODI1LDguODIyLDEwLjg4MSAgICBjMi4zMzIsMi4wNTQsNS4yNzYsMS42NzYsOC4xMTIsMS4yNjVDMzUuMzgsMzUuMDIzLDM5LjE4NywzNC40NzcsMzYuNTAxLDMyLjIwNHoiIGZpbGw9IiNiZmJmYmYiIGRhdGEtb3JpZ2luYWw9IiMwMzAxMDQiIGNsYXNzPSIiPjwvcGF0aD4KCQk8cGF0aCBzdHlsZT0iIiBkPSJNMTkuNzQ5LDE4LjM4N2MwLjU3LTAuMDUyLDEuMDk2LTAuMjg0LDEuNTg0LTAuNjE4YzIuNTk4LTEuNzc5LDUuMTk1LTMuNTczLDcuMzU0LTUuOTAyICAgIGMwLjUwNi0wLjU0OCwwLjk3MS0xLjE2MiwxLjMzMi0xLjgxNWMwLjY0OC0xLjE3NSwwLjQ0NS0yLjA3NC0wLjU3NC0yLjk1OWMtMC44NzUtMC43NTktMS45MzctMS4wMzMtMy4wNjItMS4xNDIgICAgYy0xLjgxOC0wLjE3OC0zLjE5NSwwLjcxNi0zLjcxNSwyLjQ1MmMtMC4xMjYsMC40MjItMC4yMTUsMC44NTktMC4yODYsMS4yOTRjLTAuMjU2LDEuNTU5LTAuODMsMi45ODYtMS43MjIsNC4yODkgICAgYy0wLjY3NSwwLjk4OC0xLjM1OCwxLjk3MS0yLjAxNywyLjk3Yy0wLjEwOCwwLjE2NC0wLjE5OCwwLjM0MS0wLjI4OSwwLjUyOUMxOC4yMDksMTcuNzg2LDE4LjgwMywxOC40NzMsMTkuNzQ5LDE4LjM4N3oiIGZpbGw9IiNiZmJmYmYiIGRhdGEtb3JpZ2luYWw9IiMwMzAxMDQiIGNsYXNzPSIiPjwvcGF0aD4KCQk8cGF0aCBzdHlsZT0iIiBkPSJNMy4wMTEsMTUuNzgxYzEuMjk2LDAuODEsMS45ODMsMS45NTQsMi40NTIsMy4zNDFjMC4xNzcsMC41MjQsMC40NzksMS4xMTMsMC45MDUsMS40MjMgICAgYzAuNzk1LDAuNTc2LDEuNzE5LDAuNTkxLDIuNjQyLDAuMTI3YzAuNDgyLTAuMjQyLDAuODc5LTAuNTMxLDEuMTY0LTAuOTA4YzAuNDk2LTAuNjU2LDAuMzg3LTEuNzIzLDAuMjY1LTIuMTM4ICAgIGMtMC4wNzUtMC4yNTMtMC4xNTgtMC41MDItMC4yNzctMC43MzJjLTEuMzU4LTIuNjM2LTQuMTI5LTMuMTU0LTYuNTA2LTQuMjQ2Yy0wLjE5NC0wLjA4OS0wLjYyNSwwLjA4NC0wLjgwNywwLjI3ICAgIEMyLjE0MywxMy42NDMsMi4xNjgsMTUuMjU0LDMuMDExLDE1Ljc4MXoiIGZpbGw9IiNiZmJmYmYiIGRhdGEtb3JpZ2luYWw9IiMwMzAxMDQiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" />
+                            <span class="interests__name">Manga & Anime</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class='bx bx-football interests__icon' ></i>
+                            <span class="interests__name">Football</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class='bx bx-book interests__icon' ></i>
+                            <span class="interests__name">Books</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ===== Scroll Top ===== -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+
+    <!--========== MAIN JS ===========-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
