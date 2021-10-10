@@ -10,24 +10,28 @@
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>MyResume</title>
+    <title>My Resume & Portfolio</title>
 </head>
 <body>
     <header class="l-header" id="header">
-        <nav class="nav bd-container">
-            <a href="#" class="nav__logo">Wislowski</a>
+        <nav class="nav">
+            <a href="#" class="nav__logo">
+                <p class="txt-en visible">Wislowski</p>
+                <p class="txt-pl">Wisłowski</p>
+                <p class="txt-ru">Висловски</p>
+            </a>
 
             <div class="nav__icons">
-                <a href="https://www.linkedin.com/" target="_blank" class="social__link">
+                <a href="https://www.linkedin.com/in/maciej-wislowski/" target="_blank" class="social__link">
                     <i class='bx bxl-linkedin social__icon'></i> 
                 </a>
                 <a href="https://github.com/MaciejWislowski" target="_blank" class="social__link">
                     <i class='bx bxl-github social__icon'></i>
                 </a>
-                <a href="https://www.facebook.com/" target="_blank" class="social__link">
+                <a href="https://www.facebook.com/cesarz.maciej" target="_blank" class="social__link">
                     <i class='bx bxl-facebook social__icon'></i>
                 </a>
-                <a href="https://www.instagram.com/" target="_blank" class="social__link">
+                <a href="https://www.instagram.com/maciej_serafin/" target="_blank" class="social__link">
                     <i class='bx bxl-instagram social__icon'></i> 
                 </a>
             </div>
@@ -37,37 +41,55 @@
 
                     <li class="nav__item">
                         <a href="#home" class="nav__link active-link">
-                            <i class='bx bx-home-circle nav__icon'></i>Home
+                            <i class='bx bx-home-circle nav__icon'></i>
+                            <p class="txt-en visible">Home</p>
+                            <p class="txt-pl">Wstęp</p>
+                            <p class="txt-ru">Дом</p>
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#profile" class="nav__link">
-                            <i class='bx bxs-user nav__icon'></i>Profile
+                            <i class='bx bxs-user nav__icon'></i>
+                            <p class="txt-en visible">About me</p>
+                            <p class="txt-pl">O mnie</p>
+                            <p class="txt-ru">Обо мне</p>
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#education" class="nav__link">
-                            <i class='bx bx-book nav__icon'></i>Education
+                            <i class='bx bx-book nav__icon'></i>
+                            <p class="txt-en visible">Education</p>
+                            <p class="txt-pl">Edukacja</p>
+                            <p class="txt-ru">Образование</p>
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#skills" class="nav__link">
-                            <i class='bx bx-receipt nav__icon'></i>Skills
+                            <i class='bx bx-receipt nav__icon'></i>
+                            <p class="txt-en visible">Skills</p>
+                            <p class="txt-pl">Umiejętności</p>
+                            <p class="txt-ru">Навыки и умения</p>
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#experience" class="nav__link">
-                            <i class='bx bx-briefcase nav__icon'></i>Experience
+                            <i class='bx bx-briefcase nav__icon'></i>
+                            <p class="txt-en visible">Experience</p>
+                            <p class="txt-pl">Doświadczenie</p>
+                            <p class="txt-ru">Опыт</p>
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#certificates" class="nav__link">
-                            <i class='bx bx-award nav__icon'></i>Certificates
+                            <i class='bx bx-award nav__icon'></i>
+                            <p class="txt-en visible">Certificates</p>
+                            <p class="txt-pl">Certyfikaty</p>
+                            <p class="txt-ru">Сертификаты</p>
                         </a>
                     </li>
                 </ul>
@@ -87,16 +109,26 @@
                         <div class="home__data bd-grid">
                             <img src="assets/img/wislowski.jpg" alt="" class="home__img" >
 
-                            <h1 class="home__title txt-en visible">Maciej Wislowski</h1>
-                            <h1 class="home__title txt-pl ">Wisłowski Maciej</h1>
-                            <h1 class="home__title txt-ru">Мацей Висловски</h1>
-                            <h3 class="home__profession txt-en visible">Web/Software developer || Chemical and Process Engineer || Support Assistant</h3>
-                            <h3 class="home__profession txt-pl ">Projektant Stron Internetowych/Oprogramowania || Inżynier Chemiczny i Procesowy || Wsparcie Klienta</h3>
-                            <h3 class="home__profession txt-ru ">Дизайнер веб-сайто || Инженер-химик и технолог || Помощник по поддержке</h3>
+                            <h1 class="home__title">
+                                <p class="txt-en visible">Maciej Wislowski</p>
+                                <p class="txt-pl ">Wisłowski Maciej</p>
+                                <p class="txt-ru">Мацей Висловски</p>
+                            </h1>
+
+                            <h3 class="home__profession">
+                                <p class="txt-en visible">Web/Software developer || Chemical and Process Engineer || Support Assistant</p>
+                                <p class="txt-pl ">Projektant Stron Internetowych/Oprogramowania || Inżynier Chemiczny i Procesowy || Wsparcie Klienta</p>
+                                <p class="txt-ru ">Дизайнер веб-сайто || Инженер-химик и технолог || Помощник по поддержке</p>
+                            </h3>
 
                             <!-- ===== button to download CV ===== -->
                             <div>
-                                <a download="" href="assets/pdf/Maciej Wislowski's CV.pdf" class="home_button-movil">Download</a>
+                                <a download="" href="assets/pdf/Maciej Wislowski's CV.pdf" class="home_button-movil">
+                                    <p class="txt-en visible">Download</p>
+                                    <p class="txt-pl">Pobierz</p>
+                                    <p class="txt-ru">Скачать</p>
+                                </a>
+                                
                             </div>
                         </div>
 
@@ -147,38 +179,46 @@
                 </section>
                 <!-- ===== Profile ===== -->
                 <section class="profile section" id="profile">
-                    <h2 class="section-title txt-en visible">Profile</h2>
-                    <h2 class="section-title txt-pl">Profil</h2>
-                    <h2 class="section-title txt-ru">Профиль</h2>
+                    <h2 class="section-title">
+                        <p class="txt-en visible">Profile</p> 
+                        <p class="txt-pl">Profil</p>
+                        <p class="txt-ru">Профиль</p>
+                    </h2>
 
-                    <p class="profile__description txt-en visible">I am a graduate of Chemical and Process Engineering at Warsaw University of Technology. Currently, I am working as a Technical Support Assistant in Sykes. At the same time, I am studying an online Software Developer Course. <br> <br> I am a ambitious and full of enthusiasm individual, who desire new challenges. My biggest motivation to work is the possibility to develop myself, learn new skills and achieve goals.</p>
-                    <p class="profile__description txt-pl"><br>Jestem absolwentem Inżynierii Chemicznej i Procesowej na Politechnice Warszawskiej. Obecnie pracuję jako Asystent Wsparcia Technicznego w firmie Sykes. Jednocześnie uczę się w ramach internetowego kursu programowania. <br> <br> Jestem osobą ambitną i pełną zapału, która pragnie nowych wyzwań. Moją największą motywacją do pracy jest możliwość rozwoju, zdobywania nowych umiejętności i osiągania celów.</p>
-                    <p class="profile__description txt-ru"><br>Я выпускник факультета химической и технологической инженерии Варшавского технологического университета. В настоящее время я работаю помощником технической поддержки в Sykes. В то же время я учусь курса программирования. <br> <br> Я амбициозный и увлеченный человек, который хочет новых вызовов. Моя самая большая мотивация в работе - это возможность развиваться, приобретать новые навыки и достигать целей.</p>
-
-
+                    <div class="profile__description">
+                        <p class="txt-en visible">I am a graduate of Chemical and Process Engineering at Warsaw University of Technology. Currently, I am working as a Technical Support Assistant in Sykes. At the same time, I am studying an online Software Developer Course. <br> <br> I am a ambitious and full of enthusiasm individual, who desire new challenges. My biggest motivation to work is the possibility to develop myself, learn new skills and achieve goals.</p>
+                        <p class="txt-pl">Jestem absolwentem Inżynierii Chemicznej i Procesowej na Politechnice Warszawskiej. Obecnie pracuję jako Asystent Wsparcia Technicznego w firmie Sykes. Jednocześnie uczę się w ramach internetowego kursu programowania. <br> <br> Jestem osobą ambitną i pełną zapału, która pragnie nowych wyzwań. Moją największą motywacją do pracy jest możliwość rozwoju, zdobywania nowych umiejętności i osiągania celów.</p>
+                        <p class="txt-ru">Я выпускник факультета химической и технологической инженерии Варшавского технологического университета. В настоящее время я работаю помощником технической поддержки в Sykes. В то же время я учусь курса программирования. <br> <br> Я амбициозный и увлеченный человек, который хочет новых вызовов. Моя самая большая мотивация в работе - это возможность развиваться, приобретать новые навыки и достигать целей.</p>
+                    </div>
                 </section>
                 <!-- ===== Education ===== -->
                 <section class="education section" id="education">
-                    <h2 class="section-title txt-en visible">Education</h2>
-                    <h2 class="section-title txt-pl">Edukacja</h2>
-                    <h2 class="section-title txt-ru">Образование</h2>
+                    <h2 class="section-title">
+                        <p class="txt-en visible">Education</p>
+                        <p class="txt-pl">Edukacja</p>
+                        <p class="txt-ru">Образование</p>
+                    </h2>
 
                     <div class="education__container bd-grid">
                         <!-- ====== Master Degree ======= -->
                         <div class="education__content">
                             <div class="education__time">
-                                <span class="education__rounder"/></span>
+                                <span class="education__rounder"></span>
                                 <span class="education__line"></span>
                             </div>
 
                             <div class="education__data bd-grid">
-                                <h3 class=" education__title txt-en visible">Master of Science: Chemical and Process Engineering</h3>
-                                <h3 class=" education__title txt-pl">Studia Magisterskie: Inżynieria Chemiczna i Procesowa</h3>
-                                <h3 class=" education__title txt-ru">Магистратура: Химическая и технологическая инженерия</h3>
+                                <h3 class=" education__title">
+                                    <p class="txt-en visible">Master of Science: Chemical and Process Engineering</p>
+                                    <p class="txt-pl">Studia Magisterskie: Inżynieria Chemiczna i Procesowa</p>
+                                    <p class="txt-ru">Магистратура: Химическая и технологическая инженерия</p>
+                                </h3>
 
-                                <span class="education__studies txt-en visible">Warsaw University of Technology</span>
-                                <span class="education__studies txt-pl">Politechnika Warszawska</span>
-                                <span class="education__studies txt-ru">Варшавский технологический университет</span>
+                                <span class="education__studies">
+                                    <p class="txt-en visible">Warsaw University of Technology</p>
+                                    <p class="txt-pl">Politechnika Warszawska</p>
+                                    <p class="txt-ru">Варшавский технологический университет</p>
+                                </span>
 
                                 <span class="education__year">2014 - 2016</span>
                             </div>
@@ -191,8 +231,16 @@
                             </div>
 
                             <div class="education__data bd-grid">
-                                <h3 education__title>BACHELOR OF SCIENCE: CHEMICAL AND PROCESS ENGINEERING</h3>
-                                <span class="education__studies">Warsaw University of Technology</span>
+                                <h3 class="education__title">
+                                    <p class="txt-en visible">Bachelor of Science: Chemical and Process Engineering</p>
+                                    <p class="txt-pl">Studia Inżynierskie: Inżynieria Chemiczna i Procesowa</p>
+                                    <p class="txt-ru">Инженерные изыскания: Химическая и технологическая инженерия</p>
+                                </h3>
+                                <span class="education__studies">
+                                    <p class="txt-en visible">Warsaw University of Technology</p>
+                                    <p class="txt-pl">Politechnika Warszawska</p>
+                                    <p class="txt-ru">Варшавский технологический университет</p>
+                                </span>
                                 <span class="education__year">2010 - 2014</span>
                             </div>
                         </div>  
@@ -203,7 +251,11 @@
             <div class="resume__right">
                 <!-- ==== EXPERIENCE ========-->
                 <section class="experience section" id="experience">
-                    <h2 class="section-title">Experience</h2>
+                    <h2 class="section-title">
+                        <p class="txt-en visible">Experience</p>
+                        <p class="txt-pl">Doświadczenie</p>
+                        <p class="txt-ru">Опыт</p>
+                    </h2>
 
                     <div class="experience__container bd-grid">
                         <!-- ===== Sykes ===== -->
@@ -213,9 +265,21 @@
                                 <span class="experience__line"></span>
                             </div>
                             <div class="experience__data bd-grid">
-                                <h3 class="experience__title">Technical Support Specialist</h3>
-                                <span class="experience__company">August 2019 until now | Sykes</span>
-                                <p class="experience__description">I am working as a Technical Support Specialist for the global leader in the console and gaming industry. I am providing excellent quality service to customers and creating incident reports.</p>
+                                <h3 class="experience__title">
+                                    <p class="txt-en visible">Technical Support Specialist</p>
+                                    <p class="txt-pl">Techniczne Wsparcie Klienta</p>
+                                    <p class="txt-ru">Помощник по поддержке</p>
+                                </h3>
+                                <span class="experience__company">
+                                    <p class="txt-en visible">August 2019 until now | Sykes</p>
+                                    <p class="txt-pl">Sierpień 2019 do teraz</p>
+                                    <p class="txt-ru">С августа 2019 г. по настоящее время | Sykes</p>
+                                </span>
+                                <span class="experience__description">
+                                    <p class="txt-en visible">I am working as a Technical Support Specialist for the global leader in the console and gaming industry. I am providing excellent quality service to customers and creating incident reports.</p>
+                                    <p class="txt-pl">Pracuję jako Specjalista ds. Wsparcia Technicznego dla światowego lidera w branży konsol i gier. Zapewniam klientom doskonałą jakość usług i tworzę raporty o incydentach.</p>
+                                    <p class="txt-ru">Я работаю специалистом технической поддержки мирового лидера индустрии консолей и игр. Я предоставляю клиентам услуги высочайшего качества и составляю отчеты об инцидентах.</p>
+                                </span>
                             </div>
                         </div>
                         <!-- ===== Tartan Weaving Mill ===== -->
@@ -225,43 +289,65 @@
                                 <span class="experience__line"></span>
                             </div>
                             <div class="experience__data bd-grid">
-                                <h3 class="experience__title">Customer Service Advisor</h3>
-                                <span class="experience__company">May 2018 to August 2019 | TWM</span>
-                                <p class="experience__description">I was working in a busy team and under pressure. I am providing excellent quality service to customers. I am responsible for customer service, dealing with different language speaking customers, checking deliveries, answering the company phone.</p>
+                                <h3 class="experience__title">
+                                    <p class="txt-en visible">Customer Service Advisor</p>
+                                    <p class="txt-pl">Specjalista ds. Sprzedaży</p>
+                                    <p class="txt-ru">Специалист по продажам</p>
+                                </h3>
+                                <span class="experience__company">
+                                    <p class="txt-en visible">May 2018 to August 2019 | Tartan Weaving Mill</p>
+                                    <p class="txt-pl">Maj 2018 - Sierpień 2019 | Tartan Weaving Mill</p>
+                                    <p class="txt-ru">Май 2018 - август 2019 | Tartan Weaving Mill</p>
+
+                                </span>
+                                <span class="experience__description">
+                                    <p class="txt-en visible">I was responsible for customer service in a busy shop. To my duties belonged also checking deliveries and answering the company phone.</p>
+                                    <p class="txt-pl">Byłem odpowiedzialny za obsługę klienta w ruchliwym sklepie. Do moich obowiązków należało również sprawdzanie dostaw i odbieranie telefonów firmowych.</p>
+                                    <p class="txt-ru">Я отвечал за обслуживание клиентов в загруженном магазине. В мои обязанности входила также проверка доставок и ответ на звонок компании.</p>
+                                </span>
                             </div>
-                        </div>    
+                        </div>
                         <!-- ===== MR Smart Scot ===== -->
                         <div class="experience__content">
                             <div class="experience__time">
                                 <span class="experience__rounder"></span>
-                                <span class="experience__line"></span>
                             </div>
                             <div class="experience__data bd-grid">
-                                <h3 class="experience__title">Assistant Manager</h3>
-                                <span class="experience__company">July 2016 to September 2017 | Mr Smart Scot</span>
-                                <p class="experience__description">I was responsible for managing a team, problem-solving, and supply chain in busy holiday accommodation and letting company. Also, I was providing customer service, and I was responsible for contact with business partners companies like Booking.com or Airbnb.</p>
+                                <h3 class="experience__title">
+                                    <p class="txt-en visible">Assistant Manager</p>
+                                    <p class="txt-pl">Zastępca kierownika</p>
+                                    <p class="txt-ru">Помощник управляющего</p>
+                                </h3>
+
+                                <span class="experience__company">
+                                    <p class="txt-en visible">July 2016 to September 2017 | Mr Smart Scot</p>
+                                    <p class="txt-pl">Lipiec 2016 - Wrzesień 2017 | Mr Smart Scot</p>
+                                    <p class="txt-ru">июль 2016 - сентябрь 2017 | Mr Smart Scot</p>
+
+                                </span>
+                                <span class="experience__description">
+                                    <p class="txt-en visible">I was responsible for managing a team, problem-solving, and supply chain in busy holiday accommodation and letting company. Also, I was providing customer service, and I was responsible for contact with business partners companies like Booking.com or Airbnb.</p>
+                                    <p class="txt-pl">Byłem odpowiedzialny za zarządzanie zespołem, rozwiązywanie problemów i łańcuch dostaw w ruchliwej firmie zajmującej się zakwaterowaniem wakacyjnym i wynajmem. Ponadto zajmowałem się obsługą klienta i odpowiadałem za kontakt z partnerami biznesowymi, takimi jak Booking.com czy Airbnb.</p>
+                                    <p class="txt-ru">Я отвечал за управление командой, решение проблем и цепочку поставок в многолюдной компании по размещению на отдыхе и сдаче в аренду. Кроме того, я занимался обслуживанием клиентов и отвечал за контакты с такими бизнес-партнерами, как Booking.com или Airbnb.</p>
+                                </span>
                             </div>
-                        </div>    
-                        <!-- ===== ChemTech Separation& Engineering ===== -->
-                        <div class="experience__content">
-                            <div class="experience__time">
-                                <span class="experience__rounder"></span>
-                                <!-- <span class="experience__line"></span> -->
-                            </div>
-                            <div class="experience__data bd-grid">
-                                <h3 class="experience__title">Master thesis research / Design Engineer Intern</h3>
-                                <span class="experience__company">July 2015 to May 2016 | ChemTech Separation& Engineering</span>
-                                <p class="experience__description">I was doing research for my master's thesis and in meantime, I was helping in a busy design office. During that time, I did the project in which I was responsible for designing and supervision of manufacturing of the experimental separator. As a part of the project, I was responsible for preparing and reviewing engineering documents, collaboration with different departments and external equipment suppliers.</p>
-                            </div>
-                        </div>      
+                        </div>
+
                     </div>
                 </section>
                 <!-- ====== Skills ======= -->
                 <section class="skills section" id="skills">
-                    <h2 class="section-title">Skills</h2>
+                    <h2 class="section-title">
+                        <p class="txt-en visible">Skills</p>
+                        <p class="txt-pl">Umiejętności</p>
+                        <p class="txt-ru">Навыки и умения</p>
+                    </h2>
 
                     <div class="skills__content bd-grid">
                         <ul class="skills__data">
+                            <h3 class="skills__name">
+                                <p class="txt-en visible">Web Development</p>
+                            </h3>
                             <li class="skills__name">
                                 <span class="skills__circle"></span> Html
                             </li>
@@ -271,27 +357,59 @@
                             <li class="skills__name">
                                 <span class="skills__circle"></span> JavaScript
                             </li>
+                        </ul>
+
+                        <ul class="skills__data">
+                            <h3 class="skills__name">
+                                <p class="txt-en visible">Software Development</p>
+                            </h3>
                             <li class="skills__name">
-                                <span class="skills__circle"></span> Sass
+                                <span class="skills__circle"></span> Java
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> C#
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> Python
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> C++
                             </li>
                         </ul>
 
                         <ul class="skills__data">
+                            <h3 class="skills__name">
+                                <p class="txt-en visible">Chemical and Process Engineering</p>
+                            </h3>
                             <li class="skills__name">
-                                <span class="skills__circle"></span> Angular
+                                <span class="skills__circle"></span>
+                                <p class="txt-en visible">Industrial Process Engineering</p>
+                                <p class="txt-pl">Inżynieria Procesów Przemysłowych</p>
+                                <p class="txt-ru">Инжиниринг промышленных процессов</p>
+
                             </li>
                             <li class="skills__name">
-                                <span class="skills__circle"></span> Firebase
+                                <span class="skills__circle"></span> 
+                                <p class="txt-en visible">Engineering Desing (AutoCAD, Solidworks)</p>
+                                <p class="txt-pl">Projektowanie inżynierskie (AutoCAD, Solidowrks)</p>
+                                <p class="txt-ru">Инженерный дизайн (AutoCAD, Solidowrks)</p>
                             </li>
                             <li class="skills__name">
-                                <span class="skills__circle"></span> React
+                                <span class="skills__circle"></span> 
+                                <p class="txt-en visible">Process Simulations (Ansys CFD, ChemCad)</p>
+                                <p class="txt-pl">Symulacje Procesów przemysłowych (Ansys CFD, ChemCad)</p>
+                                <p class="txt-ru">Моделирование промышленных процессов(Ansys CFD, ChemCad)</p>
                             </li>
                         </ul>
                     </div>
                 </section>
                 <!-- ===== CERTIFICATES ===== -->
                 <section class="certificate section" id="certificates">
-                    <h2 class="section-title">Certificates</h2>
+                    <h2 class="section-title">
+                        <p class="txt-en visible">Certificates</p>
+                        <p class="txt-pl">Certyfikaty</p>
+                        <p class="txt-ru">Сертификаты</p>
+                    </h2>
 
                     <div class="certificates__container bd-grid">
                         <!-- ===== CIW HTML & CSS ===== -->
@@ -309,18 +427,31 @@
                 </section>
                 <!-- ===== Languages ===== -->
                 <section class="languages section">
-                    <h2 class="section-title">Languages</h2>
+                    <h2 class="section-title">
+                        <p class="txt-en visible">Languages</p>
+                        <p class="txt-pl">Języki</p>
+                        <p class="txt-ru">Языки</p>
+                    </h2>
 
                     <div class="languages__container">
                         <ul class="languages__content bd-grid">
                             <li class="languages__name">
-                                <span class="languages__circle"></span>Polish
+                                <span class="languages__circle"></span>
+                                <p class="txt-en visible">Polish</p>
+                                <p class="txt-pl">Polski</p>
+                                <p class="txt-ru">Польский</p>
                             </li>
                             <li class="languages__name">
-                                <span class="languages__circle"></span>English
+                                <span class="languages__circle"></span>
+                                <p class="txt-en visible">English</p>
+                                <p class="txt-pl">Angielski</p>
+                                <p class="txt-ru">Aнглийский</p>
                             </li>
                             <li class="languages__name">
-                                <span class="languages__circle"></span>Russian
+                                <span class="languages__circle"></span>
+                                <p class="txt-en visible">Russian</p>
+                                <p class="txt-pl">Rosyjski</p>
+                                <p class="txt-ru">Pусский</p>
                             </li>
                         </ul>
                     </div>
@@ -332,20 +463,36 @@
                     <div class="interests__container bd-grid">
                         <div class="interests__content">
                             <i class='bx bx-music interests__icon'></i>
-                            <span class="interests__name">Music</span>
+                            <span class="interests__name">
+                                <p class="txt-en visible">Music</p>
+                                <p class="txt-pl">Muzyka</p>
+                                <p class="txt-ru">Музыка</p>
+                            </span>
                         </div>
                         <div class="interests__content">
                             <img class="icon interests__icon light-theme-only" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjEuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzguNDI3IDM4LjQyNyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzguNDI3IDM4LjQyNzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIHN0eWxlPSJmaWxsOiMwMzAxMDQ7IiBkPSJNMzYuNTAxLDMyLjIwNGMtMS41NjQtMS4zMjQtMy42NzMtMS44OTYtNS40My0yLjg4N2MtMi45ODItMS42OTEtNi4zNzUtMy4zNjgtOS4wNjEtNS40OTINCgkJCWMtNi42NjQtNS4yNy02LjMxMy0xMS41MzQtNS4zNzktMTkuMjM0YzAuMTg3LTEuNTQyLTAuMjc4LTIuOTI2LTEuNTgzLTMuODYxYy0xLjc4Ni0xLjI4LTQuMDUtMC45My00LjUxMiwxLjQ4Mw0KCQkJYy0wLjYxOSwzLjI0LDEuMzEsNy40MDksMS41MzYsMTAuNzA4YzAuMjYxLDMuODE5LTAuMTMzLDcuNjk3LTEuNDg1LDExLjI4OWMtMC45NTksMi41NDctMi41NzUsNS4xMTQtNC4zMjEsNy4yMDMNCgkJCWMtMS4wNSwxLjI1OC02Ljg4LDQuNjEzLTQuODM5LDYuNTc1YzIuMDksMi4wMDksNy42Ny0zLjQ0Miw5LjAwMy00Ljc5YzAuNTk5LTAuNjA1LDMuODQ1LTUuNjMxLDUuMzAyLTguNDIxDQoJCQljMC41MjktMS4wMTQsMC44MjMtMS43MzMsMC42NjYtMS44MzdjMC4xMDMsMC4wNjgsMC4xODMsMC4xMjYsMC4yNDIsMC4yYzIuODczLDMuNTk4LDUuMzU0LDcuODI1LDguODIyLDEwLjg4MQ0KCQkJYzIuMzMyLDIuMDU0LDUuMjc2LDEuNjc2LDguMTEyLDEuMjY1QzM1LjM4LDM1LjAyMywzOS4xODcsMzQuNDc3LDM2LjUwMSwzMi4yMDR6Ii8+DQoJCTxwYXRoIHN0eWxlPSJmaWxsOiMwMzAxMDQ7IiBkPSJNMTkuNzQ5LDE4LjM4N2MwLjU3LTAuMDUyLDEuMDk2LTAuMjg0LDEuNTg0LTAuNjE4YzIuNTk4LTEuNzc5LDUuMTk1LTMuNTczLDcuMzU0LTUuOTAyDQoJCQljMC41MDYtMC41NDgsMC45NzEtMS4xNjIsMS4zMzItMS44MTVjMC42NDgtMS4xNzUsMC40NDUtMi4wNzQtMC41NzQtMi45NTljLTAuODc1LTAuNzU5LTEuOTM3LTEuMDMzLTMuMDYyLTEuMTQyDQoJCQljLTEuODE4LTAuMTc4LTMuMTk1LDAuNzE2LTMuNzE1LDIuNDUyYy0wLjEyNiwwLjQyMi0wLjIxNSwwLjg1OS0wLjI4NiwxLjI5NGMtMC4yNTYsMS41NTktMC44MywyLjk4Ni0xLjcyMiw0LjI4OQ0KCQkJYy0wLjY3NSwwLjk4OC0xLjM1OCwxLjk3MS0yLjAxNywyLjk3Yy0wLjEwOCwwLjE2NC0wLjE5OCwwLjM0MS0wLjI4OSwwLjUyOUMxOC4yMDksMTcuNzg2LDE4LjgwMywxOC40NzMsMTkuNzQ5LDE4LjM4N3oiLz4NCgkJPHBhdGggc3R5bGU9ImZpbGw6IzAzMDEwNDsiIGQ9Ik0zLjAxMSwxNS43ODFjMS4yOTYsMC44MSwxLjk4MywxLjk1NCwyLjQ1MiwzLjM0MWMwLjE3NywwLjUyNCwwLjQ3OSwxLjExMywwLjkwNSwxLjQyMw0KCQkJYzAuNzk1LDAuNTc2LDEuNzE5LDAuNTkxLDIuNjQyLDAuMTI3YzAuNDgyLTAuMjQyLDAuODc5LTAuNTMxLDEuMTY0LTAuOTA4YzAuNDk2LTAuNjU2LDAuMzg3LTEuNzIzLDAuMjY1LTIuMTM4DQoJCQljLTAuMDc1LTAuMjUzLTAuMTU4LTAuNTAyLTAuMjc3LTAuNzMyYy0xLjM1OC0yLjYzNi00LjEyOS0zLjE1NC02LjUwNi00LjI0NmMtMC4xOTQtMC4wODktMC42MjUsMC4wODQtMC44MDcsMC4yNw0KCQkJQzIuMTQzLDEzLjY0MywyLjE2OCwxNS4yNTQsMy4wMTEsMTUuNzgxeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
                             <img class="icon interests__icon dark-theme-only" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM4LjQyNyAzOC40MjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggc3R5bGU9IiIgZD0iTTM2LjUwMSwzMi4yMDRjLTEuNTY0LTEuMzI0LTMuNjczLTEuODk2LTUuNDMtMi44ODdjLTIuOTgyLTEuNjkxLTYuMzc1LTMuMzY4LTkuMDYxLTUuNDkyICAgIGMtNi42NjQtNS4yNy02LjMxMy0xMS41MzQtNS4zNzktMTkuMjM0YzAuMTg3LTEuNTQyLTAuMjc4LTIuOTI2LTEuNTgzLTMuODYxYy0xLjc4Ni0xLjI4LTQuMDUtMC45My00LjUxMiwxLjQ4MyAgICBjLTAuNjE5LDMuMjQsMS4zMSw3LjQwOSwxLjUzNiwxMC43MDhjMC4yNjEsMy44MTktMC4xMzMsNy42OTctMS40ODUsMTEuMjg5Yy0wLjk1OSwyLjU0Ny0yLjU3NSw1LjExNC00LjMyMSw3LjIwMyAgICBjLTEuMDUsMS4yNTgtNi44OCw0LjYxMy00LjgzOSw2LjU3NWMyLjA5LDIuMDA5LDcuNjctMy40NDIsOS4wMDMtNC43OWMwLjU5OS0wLjYwNSwzLjg0NS01LjYzMSw1LjMwMi04LjQyMSAgICBjMC41MjktMS4wMTQsMC44MjMtMS43MzMsMC42NjYtMS44MzdjMC4xMDMsMC4wNjgsMC4xODMsMC4xMjYsMC4yNDIsMC4yYzIuODczLDMuNTk4LDUuMzU0LDcuODI1LDguODIyLDEwLjg4MSAgICBjMi4zMzIsMi4wNTQsNS4yNzYsMS42NzYsOC4xMTIsMS4yNjVDMzUuMzgsMzUuMDIzLDM5LjE4NywzNC40NzcsMzYuNTAxLDMyLjIwNHoiIGZpbGw9IiNiZmJmYmYiIGRhdGEtb3JpZ2luYWw9IiMwMzAxMDQiIGNsYXNzPSIiPjwvcGF0aD4KCQk8cGF0aCBzdHlsZT0iIiBkPSJNMTkuNzQ5LDE4LjM4N2MwLjU3LTAuMDUyLDEuMDk2LTAuMjg0LDEuNTg0LTAuNjE4YzIuNTk4LTEuNzc5LDUuMTk1LTMuNTczLDcuMzU0LTUuOTAyICAgIGMwLjUwNi0wLjU0OCwwLjk3MS0xLjE2MiwxLjMzMi0xLjgxNWMwLjY0OC0xLjE3NSwwLjQ0NS0yLjA3NC0wLjU3NC0yLjk1OWMtMC44NzUtMC43NTktMS45MzctMS4wMzMtMy4wNjItMS4xNDIgICAgYy0xLjgxOC0wLjE3OC0zLjE5NSwwLjcxNi0zLjcxNSwyLjQ1MmMtMC4xMjYsMC40MjItMC4yMTUsMC44NTktMC4yODYsMS4yOTRjLTAuMjU2LDEuNTU5LTAuODMsMi45ODYtMS43MjIsNC4yODkgICAgYy0wLjY3NSwwLjk4OC0xLjM1OCwxLjk3MS0yLjAxNywyLjk3Yy0wLjEwOCwwLjE2NC0wLjE5OCwwLjM0MS0wLjI4OSwwLjUyOUMxOC4yMDksMTcuNzg2LDE4LjgwMywxOC40NzMsMTkuNzQ5LDE4LjM4N3oiIGZpbGw9IiNiZmJmYmYiIGRhdGEtb3JpZ2luYWw9IiMwMzAxMDQiIGNsYXNzPSIiPjwvcGF0aD4KCQk8cGF0aCBzdHlsZT0iIiBkPSJNMy4wMTEsMTUuNzgxYzEuMjk2LDAuODEsMS45ODMsMS45NTQsMi40NTIsMy4zNDFjMC4xNzcsMC41MjQsMC40NzksMS4xMTMsMC45MDUsMS40MjMgICAgYzAuNzk1LDAuNTc2LDEuNzE5LDAuNTkxLDIuNjQyLDAuMTI3YzAuNDgyLTAuMjQyLDAuODc5LTAuNTMxLDEuMTY0LTAuOTA4YzAuNDk2LTAuNjU2LDAuMzg3LTEuNzIzLDAuMjY1LTIuMTM4ICAgIGMtMC4wNzUtMC4yNTMtMC4xNTgtMC41MDItMC4yNzctMC43MzJjLTEuMzU4LTIuNjM2LTQuMTI5LTMuMTU0LTYuNTA2LTQuMjQ2Yy0wLjE5NC0wLjA4OS0wLjYyNSwwLjA4NC0wLjgwNywwLjI3ICAgIEMyLjE0MywxMy42NDMsMi4xNjgsMTUuMjU0LDMuMDExLDE1Ljc4MXoiIGZpbGw9IiNiZmJmYmYiIGRhdGEtb3JpZ2luYWw9IiMwMzAxMDQiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" />
-                            <span class="interests__name">Manga & Anime</span>
+                            <span class="interests__name">
+                                <p class="txt-en visible">Manga & Anime</p>
+                                <p class="txt-pl">Manga & Anime</p>
+                                <p class="txt-ru">Манга и аниме</p>
+                            </span>
                         </div>
                         <div class="interests__content">
                             <i class='bx bx-football interests__icon' ></i>
-                            <span class="interests__name">Football</span>
+                            <span class="interests__name">                                
+                                <p class="txt-en visible">Football</p>
+                                <p class="txt-pl">Piłka nożna</p>
+                                <p class="txt-ru">Футбол</p>
+                            </span>
                         </div>
                         <div class="interests__content">
                             <i class='bx bx-book interests__icon' ></i>
-                            <span class="interests__name">Books</span>
+                            <span class="interests__name">
+                                <p class="txt-en visible">Books</p>
+                                <p class="txt-pl">Czytanie książek</p>
+                                <p class="txt-ru">Чтение книг</p>
+                            </span>
                         </div>
                     </div>
                 </section>

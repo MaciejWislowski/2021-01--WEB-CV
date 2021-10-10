@@ -16,3 +16,7 @@ Version 0.1
 - Day/night mode;
 - Language change option (translation unfinished thou)
 
+Version 0.11
+- Download buttons works now;
+- Translation of main content complete;
+- Navigation display get changed;

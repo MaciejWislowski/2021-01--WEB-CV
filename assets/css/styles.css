@@ -204,9 +204,6 @@ img{
     padding: 1.5rem 0;
 }
 
-.section:hover {
-    background-color: var(--container-color-alt);
-}
 
 .section-title {
     font-size: var(--h2-font-size);
@@ -255,6 +252,7 @@ img{
 /* ========== NAV ========== */
 .nav {
     height: var(--header-height);
+    padding: 0 3rem 1rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -460,6 +458,10 @@ img{
     height: 110%;
     background-color: var(--text-color-light);
     transform: translate(7px, 0);
+    -webkit-transform: translate(7px, 0);
+    -moz-transform: translate(7px, 0);
+    -ms-transform: translate(7px, 0);
+    -o-transform: translate(7px, 0);
 }
 
 .education__data,
@@ -485,8 +487,10 @@ img{
 /* ============ SKILLS and language's=============*/
 .skills__content,
 .languages__content {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
+
+
 
 .languages__content {
     align-items: center;
@@ -595,6 +599,7 @@ img{
     .scrolltop {
         display: none;
     }
+
 
 
     .resume {
