@@ -13,7 +13,7 @@ const showMenu = (toggleId, navId) => {
 }
 showMenu('nav-toggle', 'nav-menu')
 
-/* ========== LANG CHANGE SHOW MENU ========== */
+/* ========== 1 item show button ========== */
 const showItem = (buttonID, showingThingID) => {
     const button = document.getElementById(buttonID),
         showingThing = document.getElementById(showingThingID)
@@ -22,11 +22,32 @@ const showItem = (buttonID, showingThingID) => {
     if (button && showingThing) {
         button.addEventListener('click', () => {
             // We add the show-menu class to the div tag with the nav__menu class
-            showingThing.classList.toggle('show')
+            showingThing.classList.toggle('none')
         })
     }
 }
 showItem('lc-icon', 'lc-menu')
+
+
+/* ========== 1 item show - 1 remove button ========== */
+const showHideItem = (buttonID, showingThingID, hideThingID) => {
+    const button = document.getElementById(buttonID),
+        showingThing = document.getElementById(showingThingID),
+        hideThing = document.getElementById(hideThingID)
+
+    // Validate that variables exist
+    if (button && showingThing) {
+        button.addEventListener('click', () => {
+            // We add the show-menu class to the div tag with the nav__menu class
+            showingThing.classList.toggle('none')
+            if (!hideThing.classList.contains('none')){
+                hideThing.classList.toggle('none')
+            }
+        })
+    }
+}
+showHideItem('web__portfolio-button', 'web__portfolio-carousel', 'web__certificates-carousel')
+showHideItem('web__certificates-button', 'web__certificates-carousel', 'web__portfolio-carousel')
 
 /* ========== LANG CHANGE SHOW MENU ========== */
 const languageChange = (buttonID, showingClass, hidingClassOne, hidingClassTwo) => {
@@ -122,3 +143,56 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 
 })
+
+/* =============================== carousel ========================= */
+function carousel(carouselName, nextBtnID, prevBtnID) {
+    const name = carouselName;
+    const nextButtonID = nextBtnID;
+    const prevButtonID = prevBtnID;
+    let slidePosition = 0;
+    const slides = document.getElementsByClassName(name);
+    const totalSlides = slides.length;
+
+
+    document.
+        getElementById(nextButtonID)
+        .addEventListener("click", function() {
+            moveToNextSlide();
+        });
+    document.
+        getElementById(prevButtonID)
+        .addEventListener("click", function() {
+            moveToPrevSlide();
+        });
+
+    function updateSlidePositions() {
+        for(let slide of slides) {
+            slide.classList.remove('carousel__item--visible');
+            slide.classList.add('carousel__item--hidden');
+        }
+
+        slides[slidePosition].classList.add('carousel__item--visible');
+    }
+
+    function moveToNextSlide() {
+        if (slidePosition=== totalSlides-1) {
+            slidePosition = 0;
+        } else {
+            slidePosition++;
+        }
+        updateSlidePositions();
+    }
+
+    function moveToPrevSlide() {
+        if (slidePosition === 0) {
+            slidePosition = totalSlides-1;
+        } else {
+            slidePosition--;
+        }
+        updateSlidePositions();
+    }
+}
+
+carousel('wp', 'wp__btn--next', 'wp__btn--prev')
+carousel('wc', 'wc__btn--next', 'wc__btn--prev')
+

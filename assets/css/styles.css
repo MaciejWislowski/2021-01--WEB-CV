@@ -1,5 +1,9 @@
 /* ========== GOOGLE FONTS ==========*/
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;500;600&display=swap');
+
+/* =============== KEYFRAMES ================== */
+
+
 /*===== VARIABLES CSS =====*/
 :root {
     --header-height: 3rem;
@@ -96,7 +100,6 @@ body.dark-theme {
     background-color: var(--container-color-alt);
 }
 .lang-change__container {
-    display: none;
     transition: 0.3s;
 } 
 
@@ -480,38 +483,22 @@ img{
     color: var(--title-color);
 }
 
-.edcation__year {
+.education__year {
     font-size: var(--small-font-size);
 }
 
-/* ============ SKILLS and language's=============*/
-.skills__content,
-.languages__content {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-
-
-.languages__content {
-    align-items: center;
-
-}
-
-.languages__container {
-    align-items: center;
-
-}
-
-.skills__name,
-.languages__name {
+/* ============ SKILLS =============*/
+.skills__list {
     display: flex;
+    justify-content: space-between;
+}
+
+.skills__name {
     align-items:  center;
-    margin-bottom:  var(--mb-3);
 }
 
-.skills__circle,
-.languages__circle {
-    display: flex;
+.skills__circle {
+    display: inline-flex;
     width: 5px;
     height: 5px;
     background-color: var(--text-color);
@@ -519,10 +506,172 @@ img{
     margin-right: .7rem;
 }
 
-/* ========== CERTIFICATES ========== */
-.certificate__title {
-    font-size: var(--h3-font-size);
-    margin-bottom: var(--mb-1);
+.skills__button:hover {
+    background-color: var(--text-color);
+    color: var(--container-color);
+}
+
+.skills__button-group {
+    width: 40%;
+    justify-self: right;
+}
+
+.skills__button {
+    width:60%;
+    display: flex;
+    border: 0.5px solid var(--text-color);
+    color: var(--title-color);
+    border-radius: 0.25rem;
+    transition: .3s;
+    font-weight: var(--font-medium);
+    margin-top:var(--mb-1);
+    margin-left:10%;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.skills__icon {
+    font-size: 1.25rem;
+    margin-left: 0.5rem;
+}
+
+.skills__button:hover .skills__icon {
+    transition: 0.5s;
+    transform: translateY(0.2rem);
+    -webkit-transform: translateY(0.2rem);
+    -moz-transform: translateY(0.2rem);
+    -ms-transform: translateY(0.2rem);
+    -o-transform: translateY(0.2rem);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+/* =========== Carouse ============= */
+.carousel {
+    overflow: hidden;
+    max-width: 600px;
+    position: relative;
+    align-items: center;
+    margin-top: var(--mb-3);
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+    display: none;
+    width: 100%;
+}
+
+.carousel .carousel__item img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+}
+
+.carousel .carousel__item--visible {
+    display: inline-flex;
+    animation-name: fadeVisibility;
+    animation-duration: 1s;
+    justify-content: center;
+}
+
+.carousel__item--visible .carousel__item-data {
+    position:absolute;
+    display:inline-block;
+    opacity: 0%;
+}
+.carousel__item--visible:hover .carousel__item-data {
+    position:absolute;
+    opacity: 90%;
+    animation-name: fadeVisibility08;
+    animation-duration: 1s;
+    bottom: 0%;
+    left: 5%;
+    width: 90%;
+    height: 40%;
+    background-color: var(--container-color-alt);
+    color: var(--text-color);
+    z-index: var(--z-fixed);
+} 
+
+.carousel .carousel__actions {
+    display: flex;
+    animation-name: fadeVisibility;
+    animation-duration: 1s;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.carousel__button {
+    display: inline-block;
+    border: 2px solid var(--text-color);
+    color: var(--title-color);
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.25rem;
+    transition: .3s;
+    font-weight: var(--font-medium);
+    margin-top: var(--mb-3);
+}
+
+
+.carousel__button:hover {
+    background-color: var(--text-color);
+    color: var(--container-color);
+}
+
+.carousel__item-name {
+    font-size: 1.2rem;
+}
+
+.carousel__item-tech {
+    font-size: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.carousel .carousel__actions button#carousel__button--prev {
+    margin-left: 20px;
+}
+.carousel .carousel__actions button#carousel__button--next {
+    margin-right: 20px;
+}
+
+.none {
+    display: none;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: linear;
+        -webkit-transform: linear;
+        -moz-transform: linear;
+        -ms-transform: linear;
+        -o-transform: linear;
+    }
+}
+@keyframes fadeVisibility08 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.9;
+        transform: linear;
+        -webkit-transform: linear;
+        -moz-transform: linear;
+        -ms-transform: linear;
+        -o-transform: linear;
+    }
 }
 
 /* =============== Interestes ============== */

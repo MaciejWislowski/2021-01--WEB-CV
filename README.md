@@ -20,3 +20,6 @@ Version 0.11
 - Download buttons works now;
 - Translation of main content complete;
 - Navigation display get changed;
+
+Version 0.12
+- Big changes in skills, language and certificates
